@@ -41,8 +41,7 @@ if(nchar(letra[indice]) > 1) {
     } else {
   
       tweet = paste(letra[indice+1],
-                    letra[indice+2],
-                    letra[indice+3])
+                    letra[indice+2])
 }
 
 #entre no twitter
