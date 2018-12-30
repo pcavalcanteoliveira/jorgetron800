@@ -19,7 +19,6 @@ setup_twitter_oauth(consumerKey,
                     accessToken,
                     accessTokenSecret)
 
-
 musicas = as.tibble(topLyrics(name = "seu-jorge",
                               message = TRUE))
 
