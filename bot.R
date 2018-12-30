@@ -22,7 +22,7 @@ letra = lyrics(identifier = musica,
 letra = str_split(string = as.character(letra), "(?=[[:upper:]])")
 letra = letra[[6]]
 
-inteiros = seq(from = 6, to = length(letra))
+inteiros = seq(from = 6, to = length(letra)-2)
 
 indice = sample(inteiros, 1)
 
@@ -38,12 +38,7 @@ if(nchar(letra[indice]) > 1) {
     tweet = paste(letra[indice],
                 letra[indice+1])
   
-    } else {
-  
-      tweet = paste(letra[indice+1],
-                    letra[indice+2])
-}
-
+    }
 #entre no twitter
 
 ## não esqueça de mudar todas as chaves para o do seu bot, esse é do Jorgetron
