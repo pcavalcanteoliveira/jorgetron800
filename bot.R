@@ -14,7 +14,7 @@ print(seed)
 key = "7a67715b6d0dd6edf7556cc0d176e4ac" # chave do Vagalume API
 
 
-musicas = as.tibble(topLyrics(name = "seu-jorge",
+musicas = as_tibble(topLyrics(name = "seu-jorge",
                               message = TRUE))
 
 musica = sample(musicas$id.top, 1)
