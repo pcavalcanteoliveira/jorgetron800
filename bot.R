@@ -7,7 +7,8 @@ library(stringr)
 library(dplyr)
 
 seed = Sys.time() %>%
-          as.numeric() 
+  as.numeric() 
+
 seed %>%
   set.seed()
 
@@ -19,10 +20,10 @@ key = "7a67715b6d0dd6edf7556cc0d176e4ac" # chave do Vagalume API
 
 musicas = topLyrics(name = "seu-jorge",
                     message = TRUE) %>%
-                            as_tibble()
+  as_tibble()
 
 musica = musicas$id.top %>%
-            sample(1)
+  sample(1)
 
 letra = lyrics(identifier = musica,
                type = "id",
@@ -30,26 +31,31 @@ letra = lyrics(identifier = musica,
                key = key)
 
 letra = str_split(string = as.character(letra), "(?=[[:upper:]])")
-letra = letra[[6]]
+letra = letra[[4]]
 
 inteiros = seq(from = 6, to = length(letra)-2)
 
 indice = inteiros %>%
-            sample(1)
+  sample(1)
 
 if(nchar(letra[indice]) > 1) {
   
   tweet = paste(letra[indice],
-                letra[indice+1],
-                letra[indice+2])
-
-  } 
-   if(nchar(tweet) > 140) {
-
-    tweet = paste(letra[indice],
-                letra[indice+1])
+                letra[indice + 1],
+                letra[indice + 2],
+                sep = "")
   
-    }
+}
+
+if(nchar(tweet) < 100) {
+  
+  tweet = paste(letra[indice],
+                letra[indice + 1],
+                letra[indice + 2],
+                letra[indice + 3],
+                sep = "")
+  
+}
 #entre no twitter
 
 ## não esqueça de mudar todas as chaves para o do seu bot, esse é do Jorgetron
@@ -64,4 +70,3 @@ setup_twitter_oauth(consumerKey,
                     accessToken,
                     accessTokenSecret)
 tweet %>% tweet()
-       
