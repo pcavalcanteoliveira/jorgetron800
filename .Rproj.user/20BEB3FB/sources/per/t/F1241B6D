@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1549403452874.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2802980601",
+    "id" : "F1241B6D",
+    "lastKnownWriteTime" : 1549403230,
+    "last_content_update" : 1549403230,
+    "path" : "C:/Users/Pichau/Desktop/jorgetron800/bot.R",
+    "project_path" : "bot.R",
+    "properties" : {
+        "cursorPosition" : "17,46",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
