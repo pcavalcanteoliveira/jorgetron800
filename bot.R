@@ -4,32 +4,38 @@ library(twitteR)
 library(vagalumeR)
 library(tibble)
 library(stringr)
+library(dplyr)
 
-seed = Sys.time()
-set.seed(as.numeric(seed))
-print(seed)
+seed = Sys.time() %>%
+          as.numeric() 
+seed %>%
+  set.seed()
 
-
+seed %>%
+  print()
 
 key = "7a67715b6d0dd6edf7556cc0d176e4ac" # chave do Vagalume API
 
 
-musicas = as_tibble(topLyrics(name = "seu-jorge",
-                              message = TRUE))
+musicas = topLyrics(name = "seu-jorge",
+                    message = TRUE) %>%
+                            as_tibble()
 
-musica = sample(musicas$id.top, 1)
+musica = musicas$id.top %>%
+            sample(1)
 
 letra = lyrics(identifier = musica,
-       type = "id",
-       artist = "seu-jorge",
-       key = key)
+               type = "id",
+               artist = "seu-jorge",
+               key = key)
 
 letra = str_split(string = as.character(letra), "(?=[[:upper:]])")
 letra = letra[[6]]
 
 inteiros = seq(from = 6, to = length(letra)-2)
 
-indice = sample(inteiros, 1)
+indice = inteiros %>%
+            sample(1)
 
 if(nchar(letra[indice]) > 1) {
   
@@ -57,5 +63,5 @@ setup_twitter_oauth(consumerKey,
                     consumerSecret,
                     accessToken,
                     accessTokenSecret)
-tweet(tweet)
+tweet %>% tweet()
        
