@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2802980601",
+    "hash" : "4275720929",
     "id" : "F1241B6D",
-    "lastKnownWriteTime" : 1549403230,
-    "last_content_update" : 1549403230,
+    "lastKnownWriteTime" : 1549435771,
+    "last_content_update" : 1549435771624,
     "path" : "C:/Users/Pichau/Desktop/jorgetron800/bot.R",
     "project_path" : "bot.R",
     "properties" : {
-        "cursorPosition" : "17,46",
+        "cursorPosition" : "9,10",
         "scrollLine" : "0"
     },
     "relative_order" : 1,

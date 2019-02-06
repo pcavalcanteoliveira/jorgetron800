@@ -7,7 +7,7 @@ library(stringr)
 library(dplyr)
 
 seed = Sys.time() %>%
-  as.numeric() 
+          as.numeric() 
 
 seed %>%
   set.seed()
@@ -20,10 +20,10 @@ key = "7a67715b6d0dd6edf7556cc0d176e4ac" # chave do Vagalume API
 
 musicas = topLyrics(name = "seu-jorge",
                     message = TRUE) %>%
-  as_tibble()
+                      as_tibble()
 
 musica = musicas$id.top %>%
-  sample(1)
+                    sample(1)
 
 letra = lyrics(identifier = musica,
                type = "id",
