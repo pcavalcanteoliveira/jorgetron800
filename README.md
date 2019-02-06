@@ -1,4 +1,4 @@
-# jorgetron800
+# jorgetron800 - Seu Jorge Bot
 
 Arquivos do bot Jorgetron8000 (disponível em @jorgetron800) de Twitter. 
 
