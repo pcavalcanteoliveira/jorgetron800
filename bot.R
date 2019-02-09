@@ -1,9 +1,5 @@
 ### botzera regular
 
-library(twitteR)
-library(vagalumeR)
-library(tibble)
-library(stringr)
 library(dplyr)
 
 seed = Sys.time() %>%
@@ -17,20 +13,20 @@ seed %>%
 
 key = "7a67715b6d0dd6edf7556cc0d176e4ac" # chave do Vagalume API
 
-
-musicas = topLyrics(name = "seu-jorge",
-                    message = TRUE) %>%
-                      as_tibble()
+musicas = vagalumeR::topLyrics(name = "seu-jorge",
+                               message = TRUE) %>%
+                                        tibble::as_tibble()
 
 musica = musicas$id.top %>%
                     sample(1)
 
-letra = lyrics(identifier = musica,
-               type = "id",
-               artist = "seu-jorge",
-               key = key)
+letra = vagalumeR::lyrics(identifier = musica,
+                          type = "id",
+                          artist = "seu-jorge",
+                          key = key)
 
-letra = str_split(string = as.character(letra), "(?=[[:upper:]])")
+letra = stringr::str_split(string = as.character(letra), 
+                           "(?=[[:upper:]])")
 letra = letra[[4]]
 
 inteiros = seq(from = 6, to = length(letra)-2)
@@ -65,8 +61,9 @@ consumerSecret = 'nAMRBixi3HvM01nHcyLRC0wDtubi9flVvDEc9RQW58kOQZz7Ru'
 accessToken = '1079161008986427393-mfKbK0DYeC7EFIlC4oOSNQj38KPzRw'
 accessTokenSecret = 'TFO4njpN9u8hGWnCjQUKvIRNovDwf9aP1npaNfelp3u2O'
 
-setup_twitter_oauth(consumerKey, 
+twitteR::setup_twitter_oauth(consumerKey, 
                     consumerSecret,
                     accessToken,
                     accessTokenSecret)
-tweet %>% tweet()
+
+tweet %>% twitteR::tweet()
