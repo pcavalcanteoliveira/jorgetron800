@@ -1,0 +1,17 @@
+
+library(twitteR)
+library(vagalumeR)
+
+consumerKey = 'jIhYluFluZvG9eg7rw4IWr65p'
+consumerSecret = 'nAMRBixi3HvM01nHcyLRC0wDtubi9flVvDEc9RQW58kOQZz7Ru'
+accessToken = '1079161008986427393-mfKbK0DYeC7EFIlC4oOSNQj38KPzRw'
+accessTokenSecret = 'TFO4njpN9u8hGWnCjQUKvIRNovDwf9aP1npaNfelp3u2O'
+
+#Connect to twitter
+setup_twitter_oauth(consumerKey, 
+                    consumerSecret,
+                    accessToken,
+                    accessTokenSecret)
+
+tweet("teste")
+

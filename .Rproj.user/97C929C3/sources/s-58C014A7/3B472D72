@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1587051029852.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "202527344",
+    "id" : "3B472D72",
+    "lastKnownWriteTime" : 1587050874,
+    "last_content_update" : 1587050874,
+    "path" : "C:/Users/cavap/Desktop/Cava/jorgetron800/bot_setup.R",
+    "project_path" : "bot_setup.R",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

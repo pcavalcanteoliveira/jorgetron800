@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1587051320028.000,
+    "dirty" : false,
+    "encoding" : "ISO8859-1",
+    "folds" : "",
+    "hash" : "2331384494",
+    "id" : "C474269B",
+    "lastKnownWriteTime" : 1587054494,
+    "last_content_update" : 1587054494556,
+    "path" : "C:/Users/cavap/Desktop/Cava/jorgetron800/insumos.R",
+    "project_path" : "insumos.R",
+    "properties" : {
+        "cursorPosition" : "71,2",
+        "scrollLine" : "27",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
