@@ -19,6 +19,6 @@ setup_twitter_oauth(consumer_key = Sys.getenv("consumerKey"),
                     access_token = Sys.getenv("accessToken"),
                     access_secret = Sys.getenv("accessTokenSecret"))
 
-tweet <- glue("{sample(Sujeito, 1)} aproveita {sample(Objeto, 1)} para defender {sample(projeto, 1)}")
+(tweet <- glue("{sample(Sujeito, 1)} aproveita {sample(Objeto, 1)} para defender {sample(projeto, 1)}"))
 
-twitteR::tweet(tweet)
+tweet(tweet)
