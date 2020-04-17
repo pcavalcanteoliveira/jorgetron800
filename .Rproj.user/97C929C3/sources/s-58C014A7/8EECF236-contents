@@ -12,7 +12,7 @@ now() %>%
   set.seed()
 
 load_dot_env(".env")
-source("insumos.R")
+source("C:/Users/cavap/Desktop/Cava/jorgetron800/insumos.R")
 
 setup_twitter_oauth(consumer_key = Sys.getenv("consumerKey"), 
                     consumer_secret = Sys.getenv("consumerSecret"),
