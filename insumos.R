@@ -43,13 +43,14 @@ Objeto <- c(
   "a crise de valores",
   "o projeto de precarização",
   "a censura que sofri do Youtube",
-  "a arma perfeita para justificar o fim das liberdades individuaia e produzir concentração de poder como nunca",
+  "a arma perfeita para justificar o fim das liberdades individuais e produzir concentração de poder como nunca",
   "protesto contra governadora do Michigan",
   "as falhas de segurança no laboratório de Wuhan",
   "implosão das contas públicas",
   "o próximo golpe que a esquerda americana quer dar nos EUA",
   "monitoramento de pessoas por celular",
-  "a liminar de Lewandowski")
+  "a liminar de Lewandowski"
+  )
 
 
 projeto <- c(
